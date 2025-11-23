@@ -22,7 +22,7 @@ The historical development of computed tomography provides important context for
 PET imaging operates on the principle of radioactive tracer distribution and detection. Patients receive an injection of a radiopharmaceutical compound labeled with a positron-emitting isotope. As these isotopes decay, they emit positrons that travel short distances before annihilating with electrons, producing two gamma photons emitted in opposite directions (180 degrees apart). The PET scanner detects these coincident photon pairs, and the line along which the annihilation occurred is recorded as a Line of Response (LOR).
 
 The exceptional sensitivity of PET technology enables detection of radiopharmaceutical concentrations as low as picomolar levels (10^-12 mol/L). This extreme sensitivity allows for early and precise diagnosis and staging of diseases, particularly in oncology where it can detect malignant transformations before anatomical changes become apparent.
-
+![PET](PET.png)
 # Fundamental Principles of Tomographic Reconstruction
 
 The mathematical foundation of tomographic reconstruction dates back to Johann Radon's work in 1917, with the Radon transform providing the theoretical basis for all modern reconstruction algorithms. The Radon transform mathematically describes how an object's internal structure is encoded in its projections acquired at different angles. In clinical practice, these projections are organized into sinograms, which represent the raw data collected by CT and PET scanners.
