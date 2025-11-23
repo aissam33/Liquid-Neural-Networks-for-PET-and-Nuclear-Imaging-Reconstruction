@@ -1,0 +1,4 @@
+
+Aissam HAMIDA – Biomedical Engineering Department, National School of Arts and Crafts, Rabat.
+
+You can access the pre-trained model through this link. This model has been trained on a large dataset and can serve as a starting point for your own projects in processing or analysis
