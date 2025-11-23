@@ -1,5 +1,6 @@
 # Liquid-Neural-Networks-for-PET-and-Nuclear-Imaging-Reconstruction
 This repository implements a Liquid Neural Network framework for PET and nuclear imaging reconstruction, supporting sinogram input and neural ODE architectures. It provides tools for preprocessing, training, and evaluation, offering a robust baseline for AI-driven medical imaging and next-generation PET reconstruction.
+
 # Introduction to the SinoTemp Project
 
 The SinoTemp project represents a significant advancement in the field of nuclear medical imaging, specifically in Positron Emission Tomography (PET) image reconstruction. This innovative research project was developed within the Biomedical Engineering Department under the supervision of experts in nuclear medicine and artificial intelligence. The primary objective of SinoTemp is to revolutionize the PET image reconstruction process by overcoming the fundamental limitations of conventional methods through a deep learning-based approach.
@@ -33,6 +34,7 @@ The central slice theorem, also known as the Fourier slice theorem, provides a c
 Filtered backprojection operates through a series of mathematical operations. First, each projection in the sinogram undergoes Fourier transformation from the spatial to frequency domain. Then, a ramp filter is applied to compensate for the inherent blurring that would occur with simple backprojection. This filtering step emphasizes higher frequencies, which correspond to edge information and fine details in the image. After inverse Fourier transformation, the filtered projections are backprojected across the image space, essentially smearing each projection along its original acquisition path. The superposition of all these backprojected contributions reconstructs the final image.
 
 While FBP provides a straightforward and computationally efficient reconstruction method, it has significant limitations in low-signal scenarios like PET imaging. The algorithm assumes noise-free data and complete angular sampling, conditions rarely met in clinical practice. This leads to noisy images with streak artifacts, particularly when photon counts are low or when angular sampling is limited.
+![Liquid Neural Network](lnn.png)
 
 # The PET Reconstruction Challenge
 
