@@ -34,7 +34,7 @@ The central slice theorem, also known as the Fourier slice theorem, provides a c
 Filtered backprojection operates through a series of mathematical operations. First, each projection in the sinogram undergoes Fourier transformation from the spatial to frequency domain. Then, a ramp filter is applied to compensate for the inherent blurring that would occur with simple backprojection. This filtering step emphasizes higher frequencies, which correspond to edge information and fine details in the image. After inverse Fourier transformation, the filtered projections are backprojected across the image space, essentially smearing each projection along its original acquisition path. The superposition of all these backprojected contributions reconstructs the final image.
 
 While FBP provides a straightforward and computationally efficient reconstruction method, it has significant limitations in low-signal scenarios like PET imaging. The algorithm assumes noise-free data and complete angular sampling, conditions rarely met in clinical practice. This leads to noisy images with streak artifacts, particularly when photon counts are low or when angular sampling is limited.
-![Liquid Neural Network](lnn.png)
+![Liquid Neural Network](LNN.png)
 
 # The PET Reconstruction Challenge
 
