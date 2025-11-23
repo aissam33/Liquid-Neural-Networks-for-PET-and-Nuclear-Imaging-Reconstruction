@@ -1,6 +1,6 @@
 # Liquid-Neural-Networks-for-PET-and-Nuclear-Imaging-Reconstruction
 This repository implements a Liquid Neural Network framework for PET and nuclear imaging reconstruction, supporting sinogram input and neural ODE architectures. It provides tools for preprocessing, training, and evaluation, offering a robust baseline for AI-driven medical imaging and next-generation PET reconstruction.
-#Introduction to the SinoTemp Project
+# Introduction to the SinoTemp Project
 
 The SinoTemp project represents a significant advancement in the field of nuclear medical imaging, specifically in Positron Emission Tomography (PET) image reconstruction. This innovative research project was developed within the Biomedical Engineering Department under the supervision of experts in nuclear medicine and artificial intelligence. The primary objective of SinoTemp is to revolutionize the PET image reconstruction process by overcoming the fundamental limitations of conventional methods through a deep learning-based approach.
 
@@ -10,7 +10,7 @@ SinoTemp introduces a paradigm shift by treating PET reconstruction not as an in
 
 The project's clinical relevance cannot be overstated. PET imaging plays a vital role in oncology, cardiology, and neurology, enabling early detection and precise staging of diseases, particularly cancer. By improving reconstruction quality and speed, SinoTemp has the potential to enhance diagnostic accuracy, reduce patient waiting times, and potentially lower radiation exposure through shorter acquisition times or reduced tracer doses.
 
-#Medical and Technical Context
+# Medical and Technical Context
 
 Medical imaging encompasses a diverse range of technologies that provide visualization of internal anatomical structures and physiological functions. These technologies can be broadly classified into several categories based on their underlying physical principles. Ionizing radiation-based systems include conventional radiography, computed tomography (CT), and mammography, which use X-rays to create images based on tissue density and composition. Magnetic field-based imaging, primarily Magnetic Resonance Imaging (MRI), exploits the magnetic properties of tissues without using ionizing radiation. Ultrasound-based systems utilize sound waves to create real-time images and include techniques like elastography for tissue stiffness assessment.
 
@@ -22,7 +22,7 @@ PET imaging operates on the principle of radioactive tracer distribution and det
 
 The exceptional sensitivity of PET technology enables detection of radiopharmaceutical concentrations as low as picomolar levels (10^-12 mol/L). This extreme sensitivity allows for early and precise diagnosis and staging of diseases, particularly in oncology where it can detect malignant transformations before anatomical changes become apparent.
 
-#Fundamental Principles of Tomographic Reconstruction
+# Fundamental Principles of Tomographic Reconstruction
 
 The mathematical foundation of tomographic reconstruction dates back to Johann Radon's work in 1917, with the Radon transform providing the theoretical basis for all modern reconstruction algorithms. The Radon transform mathematically describes how an object's internal structure is encoded in its projections acquired at different angles. In clinical practice, these projections are organized into sinograms, which represent the raw data collected by CT and PET scanners.
 
@@ -34,7 +34,7 @@ Filtered backprojection operates through a series of mathematical operations. Fi
 
 While FBP provides a straightforward and computationally efficient reconstruction method, it has significant limitations in low-signal scenarios like PET imaging. The algorithm assumes noise-free data and complete angular sampling, conditions rarely met in clinical practice. This leads to noisy images with streak artifacts, particularly when photon counts are low or when angular sampling is limited.
 
-#The PET Reconstruction Challenge
+# The PET Reconstruction Challenge
 
 PET image reconstruction presents a fundamentally ill-posed inverse problem. In mathematical terms, an ill-posed problem violates one or more of Hadamard's conditions for well-posedness: existence, uniqueness, and stability of the solution. In practical terms, this means that multiple different activity distributions can produce similar sinogram data, especially when accounting for statistical noise and physical effects like attenuation and scatter.
 
@@ -48,7 +48,7 @@ Regularization techniques are often incorporated to stabilize the reconstruction
 
 The computational burden of iterative methods becomes particularly problematic in dynamic PET studies or when using time-of-flight information, where multiple reconstructions may be needed or the system matrix becomes more complex. This limitation has driven the search for faster, more efficient reconstruction approaches that maintain or improve upon the quality achieved by iterative methods.
 
-#SinoTemp Architecture and Innovation
+# SinoTemp Architecture and Innovation
 
 The SinoTemp architecture represents a radical departure from conventional reconstruction approaches by framing the problem as a direct learning task rather than an iterative optimization. The core innovation lies in treating the sinogram not as static spatial data but as a temporal sequence, where each angular projection represents a time step in the acquisition process.
 
@@ -62,7 +62,7 @@ The generative adversarial decoder takes this latent representation and transfor
 
 During training, the complete SinoTemp model learns from paired examples of sinogram sequences and their corresponding ground truth images. The loss function combines adversarial loss from the GAN component with traditional reconstruction losses like mean squared error and structural similarity index. This multi-component loss ensures that the reconstructed images are both quantitatively accurate and qualitatively realistic.
 
-#Methodology and Implementation
+# Methodology and Implementation
 
 The development of SinoTemp followed a rigorous methodology encompassing data preparation, network design, training strategy, and validation. The project utilized clinical PET datasets comprising sinogram-image pairs acquired from multiple patients across various clinical indications. These datasets underwent careful preprocessing to ensure consistency and compatibility with the network architecture.
 
@@ -78,7 +78,7 @@ Validation followed a comprehensive protocol comparing SinoTemp reconstructions 
 
 The implementation leveraged modern deep learning frameworks, primarily PyTorch, with custom extensions for the liquid neural network components. Training was conducted on high-performance computing resources with multiple GPUs to handle the computational demands of processing large clinical datasets.
 
-#Results and Performance Analysis
+# Results and Performance Analysis
 
 The SinoTemp model demonstrated significant improvements in reconstruction quality and efficiency compared to conventional methods. Under low-count conditions, which are particularly challenging for traditional algorithms, SinoTemp maintained superior image quality with substantially reduced noise levels and artifact suppression.
 
@@ -94,7 +94,7 @@ The adversarial training component contributed significantly to the perceptual q
 
 Ablation studies demonstrated the importance of both architectural components. Models using standard recurrent networks instead of liquid neural networks showed reduced performance in handling noisy and variable-length sequences. Similarly, models trained without adversarial loss produced quantitatively accurate but perceptually inferior images with less realistic texture characteristics.
 
-#Clinical Implications and Future Directions
+# Clinical Implications and Future Directions
 
 The successful development of SinoTemp opens several promising directions for clinical translation and further research. The immediate clinical implication is the potential for significant reduction in PET acquisition times without compromising image quality. By enabling high-quality reconstructions from shorter acquisitions or lower counts, SinoTemp could improve patient comfort, increase scanner throughput, and potentially reduce radiation exposure.
 
@@ -110,7 +110,7 @@ The modular architecture of SinoTemp facilitates extension to more complex recon
 
 From a technical perspective, ongoing research will explore more efficient network architectures, improved training strategies, and enhanced regularization techniques. The development of explainable AI methods specifically tailored for reconstruction networks will help build clinician trust and facilitate clinical adoption.
 
-#Conclusion
+# Conclusion
 
 The SinoTemp project demonstrates the transformative potential of artificial intelligence in medical image reconstruction. By reimagining PET reconstruction as a temporal sequence learning problem and leveraging advanced neural network architectures, SinoTemp achieves substantial improvements in image quality, computational efficiency, and robustness to challenging acquisition conditions.
 
@@ -121,18 +121,18 @@ The project's success underscores the importance of interdisciplinary collaborat
 As medical imaging continues to evolve toward personalized medicine and quantitative imaging biomarkers, advanced reconstruction methods like SinoTemp will play an increasingly important role in extracting maximum information from acquired data. The principles and architectures developed in this project provide a foundation for future innovations across multiple imaging modalities and clinical applications.
 
 The SinoTemp approach represents not just an incremental improvement but a paradigm shift in how we approach medical image reconstruction. By learning the reconstruction mapping directly from data rather than solving inverse problems iteratively, this work points toward a future where AI-powered reconstruction becomes the standard of care, enabling faster, safer, and more informative medical imaging
-#Authors
+# Authors
 
 Aissam HAMIDA – Biomedical Engineering Department
 Supervised by:
 Ing. Achraf SÉMMAR (Head of Nuclear Medicine Department - T2S Group)
 Pr. Benayad NSIRI
 Pr. My Hachem EL YOUSFI ALAQUI
-#License
+# License
 
 This project is intended for academic and research use. Please cite the authors in case of reuse.
 
-#Contact
+# Contact
 
 For any questions or collaboration, please contact:
 aissamhamida@icloud.com
